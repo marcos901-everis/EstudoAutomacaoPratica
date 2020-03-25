@@ -1,11 +1,17 @@
 package scenarios.teste;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import page.HomePage;
 
 public class CT002 extends BaseTest {
-  HomePage home = new HomePage(driver);
+  HomePage home;
+  
+  @Before
+  public void beforeTest() {
+    home = new HomePage(driver);
+  }
   
   @Test
   public void CT002() {

@@ -62,8 +62,9 @@ public class HomePage extends BasePage {
   public void clicarCheckBox(String campo) {
     By element = maps.createDivByInput(campo);
     WebElement item = driver.findElement(element);
-    wait(element);
-    item.click();
+    if (!item.isSelected()) {
+      item.click();
+    }
   }
   
   public void verificarCompraFinalizada(WebDriver driver) {

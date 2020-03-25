@@ -17,12 +17,12 @@ public class BaseTest {
 	@Before
 	public void before() {
 		driver = new ChromeDriver();
+    driver.manage().window().maximize();
 	}
 
 	@After
 	public void afterTest() {
 		try {
-//      Thread.sleep(3000);
 			driver.close();
 		} catch (Exception e) {
 			e.printStackTrace();

@@ -1,11 +1,17 @@
 package scenarios.teste;
 
 import page.HomePage;
+
+import org.junit.Before;
 import org.junit.Test;
 
 public class CT001 extends BaseTest {
+  HomePage home;
   
-  HomePage home = new HomePage(driver);
+  @Before
+  public void beforeTest() {
+    home = new HomePage(driver);
+  }
   
   @Test
   public void testaTituloDaPagina() throws InterruptedException {

@@ -26,8 +26,9 @@ public class CT001 extends HomePage {
   public void testaTituloDaPagina() throws InterruptedException {
     iniciarAcesso(driver, "http://automationpractice.com/index.php");
     clicarItem(driver, "Faded Short Sleeve T-shirts");
+    Thread.sleep(1000);
     clicarAddCar(driver);
-    // Thread.sleep(10000);
+    Thread.sleep(1000);
     verificarItemAdd(driver, "Product successfully added to your shopping cart");
   }
   

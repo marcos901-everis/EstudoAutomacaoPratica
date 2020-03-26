@@ -1,7 +1,6 @@
 package scenarios.teste;
 
 import page.CarrinhoPage;
-import page.CompraPage;
 import page.HomePage;
 
 import org.junit.Before;
